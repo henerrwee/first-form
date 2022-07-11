@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning the Forms</title>
+  </head>
+  <body>
+    <h1>Hello, Forms!</h1>
+    <form action="/form-handling-url" method="post">
+      <fieldset>
+        <legend>Add user</legend>
+
+        <div>
+          <label for="firstName">First name</label>
+          <input type="text" id="firstName" name="first_name">
+        </div>
+        <div>
+          <label for="lastName">Last name</label>
+          <input type="text" id="lastName" name="last_name">
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email_address">
+        </div>
+        <div>
+          <p>Choose your favorite programming language.</p>
+
+          <input type="radio" id="css" name="favorite_language" value="css">
+          <label for="css">CSS</label>
+        </div>
+        <div>
+          <input type="radio" id="html" name="favorite_language" value="html">
+          <label for="'html'">HTML</label>
+        </div>
+        <div>
+          <input type="radio" id="javascript" name="favorite_language" value="javascript">
+          <label for="'html'">JavaScript</label>
+        </div>
+        <div>
+          <label for="role">Role</label>
+          <select id="role" name="user_role_name">
+            <option value="student">Student</option>
+            <option value="instructor">Instructor</option>
+            <option value="guest">Guest</option>
+          </select>
+        </div>
+        <div>
+          <label for="expiration">Expiration</label>
+          <input type="date" id="expiration" name="expiration">
+        </div>
+        <div>
+          <label for="comments">Let me know how you feel here</label>
+          <textarea id="comments" name="comments"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter"
+                 checked>
+          <label for="newsletter">Sign up for newsletter</label>
+        </div>
+        <div>
+          <input type="checkbox" id="terms" name="terms"
+                 checked>
+          <label for="terms">Agree to terms and conditions</label>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
